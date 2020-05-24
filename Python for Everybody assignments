@@ -79,3 +79,24 @@ a rate of 10.50 per hour to test the program (the pay should be 498.75). You sho
 the string to a number. Do not worry about error checking the user input unless you want to - you can assume the user types numbers
 properly. Do not name your variable sum or use the sum() function.
 
+def computepay(h,r):
+
+    if h > 40:
+
+        pay = ( ( h * r ) + ( ( h - 40 ) * r * .5))
+
+
+        return pay
+
+    else:
+
+        pay = h * r
+
+        return pay
+
+hrs = input("Enter Hours:")
+h = float (hrs)
+rate = input (" enter rate per hour ")
+r = float (rate)
+p = computepay(h,r)
+print("Pay",p)
